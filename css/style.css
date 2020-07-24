@@ -1,0 +1,797 @@
+/* global*/
+.container{
+    width:1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.clear{
+    clear: both;
+}
+/* global */
+header{
+    overflow: hidden;
+    background-image: url("../images/mountain.jpg");
+    background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 660px;  
+   position: relative;
+}
+/* start navbar*/
+nav{
+    overflow: hidden;
+    z-index: 999;
+    padding: 9px;
+    width: 100%;
+}
+nav .container .logo{
+    float: left;
+}
+nav .container .logo img{
+    width: 100%;
+    margin:5px 0 0 15px ;
+}
+nav .container ul{
+    list-style: none;
+    float: right;
+}
+nav .container ul li{
+    float: left;
+    margin-right:30px ;
+    line-height: 2;
+    font-size: 17px;
+}
+nav .container ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav .container ul li .active{
+    color: #c7b299;
+}
+nav .container ul li a:hover{ 
+    color: #c7b299;
+    transition: 0.3s;
+}
+/* end navbar*/
+/* start content of header*/
+header .box{
+    height: 300px;
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    margin-left: -235px;
+    top: 50%;
+    margin-top: -100px;
+    text-align: center;
+    color: #fff;
+}
+header .box h2{
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+header .box h1{
+    margin: 5px 0 5px 0;
+     font-weight: 900;
+    font-size: 50px;   
+    margin-bottom: 4px;
+}
+header .box p{
+    font-size: 17px;
+}
+header .box button{
+    border: none;
+    cursor: pointer;
+    background-color: #c7b299; 
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: 900;
+    border-radius: 4px;
+}
+header .box button:hover{
+    background-color: #fff;
+    color:  #363636;
+    transition: 0.5s;
+}
+header .carousel{
+    list-style: none;
+    width: 15px;
+    text-align: center;
+}
+header .carousel li span{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+header .carousel li:first-child span{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    display: inline-block;
+
+}
+header .left ,header .right{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+header .left{
+    left:0;
+    top: 50%;
+}
+header .right{
+    right:0;
+    top: 50%;
+}
+header .left .fas{
+    font-size: 40px;
+    color: #fff;
+    opacity: 0.4;
+}
+header .right .fas{
+    font-size: 40px;
+    color: #fff;
+    opacity: 0.4;
+}
+header .scroll{
+    width: 30px;
+    height: 60px;
+    border:2px solid #fff;
+    border-radius: 20px 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -28px;
+    cursor: pointer;
+}
+header .scroll span{
+    border:4px solid #fff;
+    display: inline-block;    
+    border-radius: 100%;
+    margin:10px 0 0 11px;
+    background-color: #fff;
+    animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes scroll{
+    from{
+        margin-top:10px;
+    }
+
+    to{
+        margin-top: 35px;
+    }
+}
+/* end content of header*/
+/* our feature */
+.feature{
+    margin: 50px 0 50px 0;
+}
+.feature .container .box{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 40px;
+} 
+.feature .container .box div{
+    text-align: center;
+    margin-top: 20px;
+}
+.feature .container .box div i{
+    font-size: 40px;
+    color: #363636;
+    opacity: 0.4;
+    line-height: 2.5px;
+}
+.feature .container .box div:hover i,
+.feature .container .box div:hover h3{
+    color: #998675;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+.feature .container .box div h3{
+    font-size: 27px;
+    font-weight: 200;
+    color: #363636;
+    margin-bottom: 5px;
+}
+.feature .container .box div p{
+    font-size: 16px;
+    color: #8c8c8c;
+    padding: 0 20px;
+}
+/* end our feature */
+/* start theme */
+.feature .themes{
+    background-color: #fbfaf8;
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+.feature .themes .container h2{
+    color: #363636;
+    font-size: 50px;
+    margin: 50px 0 20px 0;
+    font-weight: 500;
+} 
+.feature .themes .container p{
+    color: #8c8c8c;
+    padding: 0 20px 20px 20px;
+    width: 50%;
+    margin: 0 auto 40px auto;
+}
+.feature .theme-feature {
+    background-color: #2F2928;
+    margin-top: -4px;
+}
+.feature .theme-feature .box{
+    display: flex;
+    justify-content: space-between;
+}
+.feature .theme-feature .box .text {
+    margin-top:2px ;
+}
+.feature .theme-feature .box .text h2{
+    font-size: 30px;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+.feature .theme-feature .box .text h2 span{
+    color: #C7B299;
+}
+.feature .theme-feature .box .text h4{
+    color: #656160;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+}
+.feature .theme-feature .container .box .btn {margin-top: 8px;}
+.feature .theme-feature .container .box .btn button{
+    border: none;
+    cursor: pointer;
+    background-color: #998675; 
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: 900;
+    border-radius: 4px;
+}
+/* end theme  */
+/* start portfolio*/
+.portfolio{ text-align: center;}
+.portfolio .container h2  {
+    color: #363636;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.portfolio .container p {
+    color: #8c8c8c;
+    width: 480px;
+    line-height: 2em;
+    margin:auto;
+    padding: 0 5px;
+}
+.portfolio .container .tabs{
+    list-style: none;
+    width:800px;
+    margin:auto;
+    margin-top: 30px;
+} 
+.portfolio .container .tabs li{
+    float: left;
+    margin-right: 10px;
+    border:1px solid #ebebeb;
+    padding:10px 25px;
+    color: #8c8c8c;
+    cursor: pointer;
+    border-radius:4px;
+}
+.portfolio .container .tabs li:hover{
+    background-color: #998675;
+    color: #fff;
+    transition: 0.3s;
+}
+.portfolio .container .tabs li:first-child{
+    background-color: #998675;
+    color: #fff;
+}
+.portfolio .container .project .box-one,
+.portfolio .container .project .box-two {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.portfolio .container .project .box-one .one,
+.portfolio .container .project .box-one .two,
+.portfolio .container .project .box-one .three{
+    width: 30%;
+    margin: 40px 0 25px 0;
+}
+
+.portfolio .container .project .box-one .one img,
+.portfolio .container .project .box-one .two img,
+.portfolio .container .project .box-one .three img{
+    width: 100%;
+}
+.portfolio .container .project .box-one .one .text ,
+.portfolio .container .project .box-one .two .text ,
+.portfolio .container .project .box-one .three .text {
+    position: relative;
+    text-align: left;
+    margin-top: 0;
+     background-color: #fafbf8;
+     padding: 8px 24px
+}
+.portfolio .container .project .box-one .one .text::before ,
+.portfolio .container .project .box-one .two .text::before ,
+.portfolio .container .project .box-one .three .text::before {
+    content: " ";
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    border-bottom: 11px solid #fff;
+}
+.portfolio .container .project .box-one .one .text h4,
+.portfolio .container .project .box-one .two .text h4,
+.portfolio .container .project .box-one .three .text h4{
+   color: #363636;
+   margin-bottom: 5px;
+}
+.portfolio .container .project .box-one .one .text h4::after,
+.portfolio .container .project .box-one .two .text h4::after,
+.portfolio .container .project .box-one .three .text h4::after{
+    font-family: "Font Awesome 5 free"; 
+    content: "\f004";
+    position: absolute;
+    right: 8px;
+    top:30px;
+    font-weight: 400;
+    color: rgb(207, 150, 107);
+}
+.portfolio .container .project .box-one .one .text p,
+.portfolio .container .project .box-one .two .text p,
+.portfolio .container .project .box-one .three .text p{
+    width: 100%;
+    padding: 0;
+    color: #aaa;
+}
+.portfolio .container .project .box-one .one .text p::after,
+.portfolio .container .project .box-one .two .text p::after,
+.portfolio .container .project .box-one .three .text p::after{
+    content: "175";
+    color: #aaa;
+    position: absolute;
+    right: 4px;
+    top:54px;
+}
+.portfolio .container .project .box-two .four,
+.portfolio .container .project .box-two .five,
+.portfolio .container .project .box-two .six{
+    width: 30%;
+    margin-bottom: 30px;
+}
+.portfolio .container .project .box-two .four .text ,
+.portfolio .container .project .box-two .five .text ,
+.portfolio .container .project .box-two .six .text {
+    position: relative;
+    margin-top:0;
+    text-align: left;
+    background-color: #fafbf8;
+    padding: 8px 24px;
+
+}
+.portfolio .container .project .box-two .four .text::before ,
+.portfolio .container .project .box-two .five .text::before ,
+.portfolio .container .project .box-two .six .text::before {
+     content: " ";
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    border-bottom: 11px solid #fff;
+}
+.portfolio .container .project .box-two .four img,
+.portfolio .container .project .box-two .five img,
+.portfolio .container .project .box-two .six img{
+    width: 100%;
+}
+.portfolio .container .project .box-two .four .text h4,
+.portfolio .container .project .box-two .five .text h4,
+.portfolio .container .project .box-two .six .text h4
+{
+    color: #363636;
+    margin-bottom: 5px;
+    
+}
+.portfolio .container .project .box-two .four .text h4::after,
+.portfolio .container .project .box-two .five .text h4::after,
+.portfolio .container .project .box-two .six .text h4::after
+{
+    font-family: "Font Awesome 5 free"; 
+    content: "\f004";
+    position: absolute;
+    right: 8px;
+    top:30px;
+    font-weight: 400;
+    color: rgb(207, 150, 107);
+}
+.portfolio .container .project .box-two .four .text p,
+.portfolio .container .project .box-two .five .text p,
+.portfolio .container .project .box-two .six .text p{
+    width: 100%;
+    padding: 0;
+    color: #aaa;
+}
+.portfolio .container .project .box-two .four .text p::after,
+.portfolio .container .project .box-two .five .text p::after,
+.portfolio .container .project .box-two .six .text p::after{
+    content: "175";
+    color: #aaa;
+    position: absolute;
+    right: 4px;
+    top:54px;
+}
+.portfolio .container button{
+    border: none;
+    cursor: pointer;
+    background-color: #998675; 
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    font-weight: 900;
+    border-radius: 3px;
+    margin-top:30px;
+}
+
+/* end portfolio*/
+
+/* about us*/
+.about-us{
+    background-image: url("../images/desk1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;  
+    margin-top:50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.about-us .play{
+    width:70px;
+    height: 70px;
+    background-color: #fff;
+    opacity: 0.2;
+    border-radius: 100%;
+    position: absolute;
+    top: 33%;
+    left:45%;
+    padding: 15px;
+    z-index:2;
+    cursor: pointer;
+}
+.about-us .fas{
+    z-index: 999;
+    color: #fff;
+    text-indent: 5px;
+    font-size: 40px;
+    border:4px solid #fff;
+    border-radius: 100%;
+    padding:15px;
+    position: absolute;
+    top: 34%;
+    left:46%;
+    margin:4px 0 0 -3px;
+    cursor: pointer;
+}
+.about-us .play:hover, .about-us .fas:hover{
+    border-color: rgb(172, 125, 90);
+    transition: 0.2s;   
+}
+.about-us h2{
+    position: absolute;
+    top: 50%;
+    left:40%;
+    color:#fff;
+    font-size: 35px;
+    margin-top:4px;
+    margin-left:-80px;
+}
+.about-us p{
+    position: absolute;
+    top: 50%;
+    left:35%;
+    width:500px;
+    font-size: 18px;
+    text-align: center;
+    color:#fff;
+    margin-top:50px;
+    margin-left:-60px;
+    line-height: 1.5em;
+}
+.about-us span{
+    color:#c7b299;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top:120px;
+    margin-left:-40px;
+    display: inline-block;
+    font-size: 20px;
+}
+/* about us*/
+/* mobile features*/
+.mobile-feature {
+    margin-top:80px;
+}
+.mobile-feature .container .box{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-feature .container .box .feat-text{
+    padding-left: 50px;
+}
+.mobile-feature .container .box .feat-text h2{
+    font-size :30px;
+    font-weight: 600;
+    color: #383838;
+}
+.mobile-feature .container .box .feat-text p{
+    color: #8c8c8c;
+    font-size:18px;
+    line-height: 1.5em;
+}.mobile-feature .container .box .feat-text p i{
+    color: #c7b299;
+    padding-right: 20px;
+    font-size:20px;
+}
+.mobile-feature .container .box .feat-text .list{
+    padding-left:35px;
+    margin-top:30px;  
+}
+.mobile-feature .container .box .feat-text .list p{
+    line-height: 2em;
+}
+
+/* mobile features*/
+/*statistics*/
+.statistics{
+    margin-top:-4px;
+    background-color: #2f2928;
+    color: #fff;
+    text-align: center;
+    padding:35px 0;
+    margin-bottom: 0;
+}
+.statistics .container .box{
+    display: flex;
+    justify-content: space-between;
+}
+.statistics .container .box i{
+    font-size: 45px;
+}
+.statistics .container .box p{
+    font-size:40px;
+    margin: 5px 0;
+}
+.statistics .container .box span{
+    color: #c7b299;
+}
+.statistics .container .box div::after{
+content: "";
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+    background: #e7d4c4;
+}
+/*statistics*/
+/* posts*/
+.post .container  .box-one{
+    display: flex;
+    justify-content: space-around;
+}
+.post .container  .box-one .one,
+.post .container .box-one .two,
+.post .container .box-one .three{
+    width: 30%;
+    margin: 40px 0 25px 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+.post .container  .box-one .one .details,
+.post .container .box-one .two .details,
+.post .container .box-one .three .details{
+    position: relative;
+}
+.post .container  .box-one .one .details div,
+.post .container .box-one .two .details div,
+.post .container .box-one .three .details div{
+    position: absolute;
+    top:-4px;
+    left:10px;
+}
+.post .container  .box-one .one .details,
+.post .container .box-one .two .details ,
+.post .container .box-one .three .details{
+    overflow: hidden;
+}
+.post .container  .box-one .one .details div p,
+.post .container .box-one .two .details div p,
+.post .container .box-one .three .details div p{
+    
+    background-color: #363636;
+    margin-bottom:2px;
+    padding:12px 15px;
+    text-align:center;
+    color:#fff;
+    font-size:20px;
+    border-radius: 3px;
+    z-index:999;
+}
+.post .container  .box-one .one .details div span,
+.post .container .box-one .two .details div span,
+.post .container .box-one .three .details div span{
+    z-index: 9999;
+background-color: #282828;
+padding:5px 15px;
+border-radius: 3px;
+color:#fff;
+}
+.post .container  .box-one .one:hover .details div p,
+.post .container .box-one .two:hover .details div p,
+.post .container .box-one .three:hover .details div p
+{
+    background-color: #C7B299;
+    transition:0.2s;
+}
+.post .container  .box-one .one:hover .details div span,
+.post .container .box-one .two:hover .details div span,
+.post .container .box-one .three:hover .details div span{
+    background-color:#998675;
+    transition: 0.2s;
+}
+.post .container .box-one .one img,
+.post .container .box-one .two img,
+.post .container .box-one .three img{
+    width: 100%;
+}
+.post .container  .box-one .one .text ,
+.post .container  .box-one .two .text ,
+.post .container  .box-one .three .text {
+    position: relative;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+.post .container  .box-one .one:hover .text h4,
+.post .container .box-one .two:hover .text h4,
+.post .container .box-one .three:hover .text h4
+{
+    transition: 0.2s;
+    color: #998675
+}
+.post .container  .box-one .one .text h4 ,
+.post .container  .box-one .two .text h4 ,
+.post .container  .box-one .three .text h4
+{
+    font-size: 25px;
+    color: #363636;
+    margin-bottom: 5px;
+}
+.post .container  .box-one .one .text p,
+.post .container  .box-one .two .text p,
+.post .container  .box-one .three .text p{
+    width: 100%;
+    padding: 0;
+    color: #aaa;
+    margin-bottom: 25px;
+}
+.post .container  .box-one .one .text span ,
+.post .container  .box-one .two .text span ,
+.post .container  .box-one .three .text span {
+    color: #555;
+    cursor: pointer;
+}
+.post .container  .box-one .one .text span i ,
+.post .container  .box-one .two .text span i ,
+.post .container  .box-one .three .text span i{
+    margin-left: 5px;
+    cursor: pointer;
+}
+/* posts*/
+/* sponsor*/
+.sponsors{
+    background-image: url("../images/rocks_2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0 70px 0; 
+    
+}
+.sponsors .container .box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.sponsors .container .box div img{
+    width: 100%;
+}
+/* sponsor*/
+/* footer*/
+footer{
+    background-color: #191919;
+    padding:30px 0 
+}
+footer .container .box{
+    display: flex;
+    justify-content: space-between;
+}
+footer .container .box .about{
+    width:20%;
+}
+
+footer .container .box div h3{
+    color: #fff;
+    font-weight: 500;
+}
+footer .container .box div p{
+    color: #666;
+    font-size:16px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    line-height: 1.8em;
+}
+footer .container .box .posts p:hover,
+footer .container .box .pages p:hover{
+    color:#e7d4c4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer .container .box .contact p{
+    margin-bottom: 20px;
+}
+footer .container .box .posts p,
+footer .container .box .pages p,
+footer .container .box .contact p{
+    border-bottom:1px solid #464646;
+    opacity: 0.8;
+}
+footer .container .box .contact p i{
+    padding-right: 8px;
+}
+/* footer*/
+
+/* copyright */
+.copyright{
+    background-color: #111111;
+    color: #666;
+    padding:15px 0;
+}
+.copyright .container .box {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright .container .box ul{
+list-style: none;
+display: block;
+margin-left: 100px;
+}
+.copyright .container .box ul li {
+    float: left;
+    margin-right: 15px;
+    font-size:20px;
+}
+.copyright .container .box ul li:hover{
+color:#e7d4c4;
+transition: 0.3s;
+cursor: pointer;
+}
+/* copyright */
